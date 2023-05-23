@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './routing.module';
 import { AppComponent } from './app.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactCreateComponent } from './contact-create/contact-create.component';
@@ -19,6 +19,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
+import { JwtModule } from '@auth0/angular-jwt';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { MatCardModule } from '@angular/material/card';
     ContactListComponent,
     ContactCreateComponent,
     ContactUpdateComponent,
-    ContactDetailComponent
+    ContactDetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,16 @@ import { MatCardModule } from '@angular/material/card';
     MatInputModule,
     MatTableModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: function tokenGetter() {
+          return localStorage.getItem('access_token');
+        },
+        allowedDomains: ['localhost:3000'],
+        disallowedRoutes: ['localhost:3000/auth/login']
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

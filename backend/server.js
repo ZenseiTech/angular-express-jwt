@@ -19,12 +19,14 @@ const verifyToken = (token) => jwt.verify(token,'SECRET_KEY');
 const userdb = JSON.parse(fs.readFileSync('./database.json', 'UTF-8')).users || [];
 
 const isAuthenticated = ({email, password}) => {
+  console.log("User email: " + email + " and password: " + password)
   return userdb.findIndex(user => user.email === email && user.password === password) !== -1
 }
 
 
 server.post('/auth/login', (req, res) => {
   const {email, password} = req.body
+  console.log("I am here ...")
   // check email and password exist in database ...
   if (isAuthenticated({email, password}) === false) {
     const status = 401

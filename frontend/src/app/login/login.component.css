@@ -1,0 +1,7 @@
+form {
+  display: grid;
+  padding: 10px;
+}
+mat-card {
+  margin: 20%;
+}

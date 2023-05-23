@@ -1,9 +1,8 @@
-"id":10,"username":"Shannon.Nitzsche90","password":"IKJeCw1PNW_9Ed6","email":"Hillary21@hotmail.com"
 
 Using httpie:
 
 // Get token ...
-http POST localhost:3000/auth/login email=Hillary21@hotmail.com password=IKJeCw1PNW_9Ed6
+http POST localhost:3000/auth/login email=Imani_Turner91@hotmail.com password=mVEb2Y9LqmjfqIG
  
 // From the result get the token a call 
 http POST localhost:3000/contacts 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkhpbGxhcnkyMUBob3RtYWlsLmNvbSIsInBhc3N3b3JkIjoiSUtKZUN3MVBOV185RWQ2IiwiaWF0IjoxNjg0NTQ5NzQ3LCJleHAiOjE2ODQ1NTMzNDd9.hJeRG8N8RTxtM7l7S8_1uQZwNAwZDOGgA_aZtf3l9lE' firstName=Shannon lastName=Nitzsche emaiL=Hillary21@hotmail.com phone="905 555-55-55" city=Milan country=Italy title=Mrs 
