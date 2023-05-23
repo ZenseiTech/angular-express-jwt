@@ -3201,34 +3201,6 @@
       "city": "Johannaborough",
       "country": "Sierra Leone",
       "title": "District Security Administrator"
-    },
-    {
-      "{\"firstName\":\"Shannon\", \"lastName\":\"Nitzsche\", \"email\":\"Hillary21@hotmail.com\", \"phone\":\"905 555-55-55\", \"city\":\"Milan\", \"country\":\"Italy\", \"title\":\"Mrs\"}": "",
-      "id": 202
-    },
-    {
-      "{'firstName':'Shannon', 'lastName':'Nitzsche', 'email':'Hillary21@hotmail.com', 'phone':'905 555-55-55', 'city':'Milan', 'country':'Italy', 'title':'Mrs'}": "",
-      "id": 203
-    },
-    {
-      "firstName": "Shannon",
-      "lastName": "Nitzsche",
-      "emaiL": "Hillary21@hotmail.com",
-      "phone": "905 555-55-55",
-      "city": "Milan",
-      "country": "Italy",
-      "title": "Mrs",
-      "id": 204
-    },
-    {
-      "city": "Miss",
-      "lastName": "Rodriguez",
-      "firstName": "Jorge",
-      "email": "barizonte@gmail.com",
-      "phone": "14564560990",
-      "country": null,
-      "title": null,
-      "id": 205
     }
   ]
 }
