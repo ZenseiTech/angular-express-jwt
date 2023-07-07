@@ -1,3 +1,4 @@
+// where the components are painted (single page ...)
 import { Component } from '@angular/core';
 import { ApiService } from './api.service';
 import { JwtService } from './jwt.service';
@@ -60,6 +61,10 @@ export class AppComponent {
   }
 
   loggedIn() {
-    this.jwtService.loggedIn;
+    return this.jwtService.loggedIn;
+  }
+
+  noLoggedIn() {
+    return !this.jwtService.loggedIn;
   }
 }

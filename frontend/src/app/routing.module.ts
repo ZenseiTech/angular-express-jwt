@@ -1,3 +1,4 @@
+// we setup the routing here ...
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactListComponent } from './contact-list/contact-list.component';

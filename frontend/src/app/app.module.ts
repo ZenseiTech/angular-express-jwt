@@ -1,9 +1,10 @@
 // this the root module ...
+// here you import all the modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './routing.module';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactCreateComponent } from './contact-create/contact-create.component';
 import { ContactUpdateComponent } from './contact-update/contact-update.component';
