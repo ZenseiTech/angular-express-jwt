@@ -3,9 +3,9 @@
     Angular Express Demo
   </h1>
 
-  <a mat-button routerLink="contact-list">Contacts</a>
-  <a mat-button routerLink="contact-create">Create Contact</a>
-  <a mat-button routerLink="login" *ngIf="noLoggedIn()">Login</a>
+  <a mat-button routerLink="contact-list" *ngIf="loggedIn()">Contacts</a>
+  <a mat-button routerLink="contact-create" *ngIf="loggedIn()">Create Contact</a>
+  <!-- <a mat-button routerLink="login" *ngIf="noLoggedIn()">Login</a> -->
   <a mat-button (click)="logOut()" *ngIf="loggedIn()">Logout</a>
 
 
