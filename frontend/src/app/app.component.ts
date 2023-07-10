@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
 
   constructor(private apiService: ApiService, private jwtService: JwtService, private router: Router) { }
+
   ngOnInit() {
     this.apiService.getContacts().subscribe((res) => {
       console.log(res.body);
